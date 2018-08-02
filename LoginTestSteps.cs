@@ -19,6 +19,7 @@ namespace SpecFlowPropertyLoginTestObject
         public void GivenIAmOnTheLoginPage()
         {
             LoginPage.Can_See_Login_Page_Title();
+            // console.write("Hello");
         }
 
         [Given(@"I am inserting a valid User")]
