@@ -245,15 +245,18 @@ namespace SpecFlowPropertyLoginTestFramework
             Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             var Add_Repayment_Amt = Browser.driver.FindElement(By.XPath("//*[@id='financeSection']/div[3]/div[1]/div[1]/div[1]/input"));
             Add_Repayment_Amt.SendKeys("1000");
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
         public static void Select_Frequency()
         {
             var Select_Frequency_Repayment = Browser.driver.FindElement(By.XPath("//*[@id='financeSection']/div[3]/div[1]/div[2]/select"));
+            Select_Frequency_Repayment.Click();
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+            var select_repayment_frequency = Browser.driver.FindElement(By.XPath("//*[@id='financeSection']/div[3]/div/div[2]/div/div[2]/div[1]"));
+            select_repayment_frequency.Click();
             Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-          //  var Select_Frequency_Repayment_dropdown = new SelectElement(Select_Frequency_Repayment);
-          //  Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            // Select_Frequency_Repayment_dropdown.SelectByIndex(1);
+         
         }
 
         public static void Start_date()

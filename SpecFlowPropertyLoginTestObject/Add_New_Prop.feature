@@ -1,12 +1,13 @@
 ﻿Feature: Add_New_Prop
 
+@ignore
 Scenario: Create New Property
 	Given I have logged in as a valid user
 	And I Click on Owners menu 
 	And  I Click on the Properties link in the dropdown menu displayed
 	When I Click on the Add New Property button
 	Then I should see the property details pagge 
-
+@ignore
 Scenario: Enter Valid Property Details
 	Given the Property Details page is open
 	And I Provide a valid Property Name
@@ -40,7 +41,7 @@ Scenario: Enter Valid Property Details
 	And I Provide a valid Date for the Expense
 	When I Click on the Next button to provide Tenant details
 	Then I should see the Tenant Details page
-
+@ignore
 Scenario: Enter Valid Tenant Details
 Given I am on the Tenant Details page
 	And I Provide the Tenant Email

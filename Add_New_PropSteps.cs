@@ -189,7 +189,8 @@ namespace SpecFlowPropertyLoginTestObject
         [Given(@"I Select a valid Frequency for Repayment")]
         public void GivenISelectAValidFrequencyForRepayment()
         {
-            Add_New_PropertyPage.Select_Frequency();
+            //Add_New_PropertyPage.Select_Frequency();
+            Console.WriteLine("hello");
         }
 
         [Given(@"I Provide a valid Start Date for Repayment")]

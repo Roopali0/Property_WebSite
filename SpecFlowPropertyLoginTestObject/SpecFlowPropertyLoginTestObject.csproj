@@ -77,6 +77,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\SpecFlowPropertyLoginTestFrameworkSolution - Copy\TenantDetailsOnBoardingSteps.cs">
+      <Link>TenantDetailsOnBoardingSteps.cs</Link>
+    </Compile>
     <Compile Include="..\Add_New_PropSteps.cs">
       <Link>Add_New_PropSteps.cs</Link>
     </Compile>
@@ -95,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginTest.feature</DependentUpon>
     </Compile>
+    <Compile Include="TenantDetailsOnboarding.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TenantDetailsOnboarding.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SpecFlowPropertyLoginTestFramework\SpecFlowPropertyLoginTestFramework.csproj">
@@ -112,6 +120,10 @@
     <None Include="LoginTest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>LoginTest.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TenantDetailsOnboarding.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TenantDetailsOnboarding.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>

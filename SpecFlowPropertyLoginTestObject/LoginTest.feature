@@ -1,4 +1,5 @@
 ﻿Feature: LoginTest
+
 @ignore
 Scenario: Login
 	Given I launch the url in the Browser
