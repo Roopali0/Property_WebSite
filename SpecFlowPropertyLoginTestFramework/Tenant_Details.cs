@@ -46,20 +46,22 @@ namespace SpecFlowPropertyLoginTestFramework
         {
             var current_Add = Browser.driver.FindElement(By.Name("searchAddress"));
             current_Add.SendKeys("1001A High Street, Avalon, Lower Hutt, New Zealand");
-            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }
 
         public static void photo_Upload()
         {
             Browser.driver.FindElement(By.Id("file-upload")).Click();
-            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
             SendKeys.SendWait(@"C:\Users\Dashy\Pictures\Car Photos\Test");
-            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(40);
             SendKeys.SendWait(@"{Enter}");
-            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(100);
+            Browser.driver.FindElement(By.XPath("//*[@id='tenant - details']/div[2]/div/div[2]/div[1]/div")).Click();
         }
         public static void save_Click()
         {
+            Browser.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(50);
             new WebDriverWait(Browser.driver, TimeSpan.FromSeconds(30)).Until(ExpectedConditions.ElementToBeClickable(By.Id("Save")));
             Browser.driver.FindElement(By.Id("Save")).Click();
         }

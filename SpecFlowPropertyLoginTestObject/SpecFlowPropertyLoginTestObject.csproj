@@ -77,6 +77,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\SpecFlowPropertyLoginTestFrameworkSolution - Copy\ListARental.cs">
+      <Link>ListARental.cs</Link>
+    </Compile>
     <Compile Include="..\..\SpecFlowPropertyLoginTestFrameworkSolution - Copy\TenantDetailsOnBoardingSteps.cs">
       <Link>TenantDetailsOnBoardingSteps.cs</Link>
     </Compile>
@@ -92,6 +95,11 @@
       <DependentUpon>Add_New_Prop.feature</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="ListARental.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListARental.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LoginTest.feature.cs">
       <AutoGen>True</AutoGen>
@@ -116,6 +124,10 @@
       <LastGenOutput>Add_New_Prop.feature.cs</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="ListARental.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ListARental.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="LoginTest.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

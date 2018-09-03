@@ -36,6 +36,7 @@ namespace SpecFlowPropertyLoginTestFramework
         public static string Can_See_Login_Page_Title()
         {
             return Browser.driver.Title;
+            
         }
 
         public static void Insert_User_Name()

@@ -18,7 +18,7 @@ namespace SpecFlowPropertyLoginTestFramework
             LoginPage.Can_Goto_LoginPage();
             LoginPage.Insert_User_Name();
             LoginPage.Insert_Password();
-            LoginPage.Click_On_Login_Button();
+            LoginPage.Click_On_Login_Button();            
             // LoginPage.Cick_On_Skip_Button();
         }
     }

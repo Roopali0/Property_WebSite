@@ -86,6 +86,8 @@
     <Compile Include="Add_New_PropertyPage.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Browser.cs" />
+    <Compile Include="Excel_Obj.cs" />
+    <Compile Include="ListARental_Owner.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tenant_Details.cs" />
